@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name=viewport content="width=device-width, minimum-scale=0.1">
   <title>SNEKS!</title>
   <style>
   body {
@@ -23,22 +24,19 @@
         color-stop(100%, rgba(255, 0, 0, 1)));
   }
 
-  html, body, #wrapper {
-     height:100%;
-     width: 100%;
-     margin: 0;
-     padding: 0;
-     border: 0;
-  }
-  #wrapper td {
-     vertical-align: middle;
-     text-align: center;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 90%;
+    max-height: 95%;
   }
   </style>
 </head>
 <body>
-  <table id=wrapper><tr>
-      <td><img src=/rainbow_snek.jpg /></td>
-  </tr></table>
+  <div>
+    <img src=https://snek.lgbt/rainbow_snek.jpg>
+  </div>
 </body>
 </html>
